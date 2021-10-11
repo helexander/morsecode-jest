@@ -5,8 +5,8 @@
 
 This project is all about using Objects and getting you comfortable iterating through them.
 
-Morse Code Project
-Create a user interface that allows the user to either input some English text or some Morse Code
+## Morse Code Project
+-> Create a user interface that allows the user to either input some English text or some Morse Code
 
 - Choose how many input fields you would like to have on your UI.
 - Grab the input, break it down into size appropriate chunks (sentence > word > letter)
