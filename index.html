@@ -9,8 +9,11 @@
 	</head>
 	<body>
 		<h1>Morse Code translator</h1>
-		<input class="input_english" type="text" />
-
+		<form id="form_morse">
+			<label for="input_english">Enter a sentence/word: </label>
+			<input id="input_english" class="input_english" type="text" />
+			<button id="button_translate" type="submit">Translate</button>
+		</form>
 		<div class="main"></div>
 
 		<script type="module" src="js/index.js"></script>
