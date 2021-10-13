@@ -1,14 +1,9 @@
 import { morseCode } from "../js/data.js";
-import { displayAlert } from "./dom-manipulate.js";
 
 export const allowedChar = (input) => {
-    const regex = /[^a-z0-9 !,.?]/gi;
-
-    if ((regex.test(input)))
-        displayAlert();
+    const regex = /[^a-z0-9 \/!,.?-]/gi;
 
     return regex.test(input);
-
 }
 
 export const swapObj = (objectToSwap) => {
@@ -37,6 +32,6 @@ export const convertToEnglish = (str) => {
         .map(el => {
             return convertedMorseFormat[el];
         })
-        .join(""); // to remove whitespace from both side of the string
+        .join("");
 }
 
