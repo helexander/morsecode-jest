@@ -1,0 +1,1 @@
+import { swapObj, convertToMorse, convertToEnglish, allowedChar } from "../modules/non-dom-manipulate";

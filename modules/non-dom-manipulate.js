@@ -1,6 +1,17 @@
 import { morseCode } from "../js/data.js";
+import { displayAlert } from "./dom-manipulate.js";
 
-const swapObj = (objectToSwap) => {
+export const allowedChar = (input) => {
+    const regex = /[^a-z0-9 !,.?]/gi;
+
+    if ((regex.test(input)))
+        displayAlert();
+
+    return regex.test(input);
+
+}
+
+export const swapObj = (objectToSwap) => {
     const swappedObj = {};
     Object.keys(objectToSwap).forEach((key) => {
         swappedObj[objectToSwap[key]] = key;
