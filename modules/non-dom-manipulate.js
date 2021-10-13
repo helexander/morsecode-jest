@@ -1,6 +1,12 @@
 import { morseCode } from "../js/data.js";
 
-const swapObj = (objectToSwap) => {
+export const allowedChar = (input) => {
+    const regex = /[^a-z0-9 \/!,.?-]/gi;
+
+    return regex.test(input);
+}
+
+export const swapObj = (objectToSwap) => {
     const swappedObj = {};
     Object.keys(objectToSwap).forEach((key) => {
         swappedObj[objectToSwap[key]] = key;
@@ -26,6 +32,6 @@ export const convertToEnglish = (str) => {
         .map(el => {
             return convertedMorseFormat[el];
         })
-        .join(""); // to remove whitespace from both side of the string
+        .join("");
 }
 
