@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Morse Code</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/main-style.css" />
+	</head>
+	<body>
+		<div class="jumbotron">
+			<h1 class="jumbo__header">Morse Code translator</h1>
+
+			<form id="form_morse">
+				<div class="form-group">
+					<div class="row">
+						<label class="col-sm-3 col-form-label" for="input_english"
+							>Enter Text Here:
+						</label>
+						<div class="col-sm-9">
+							<input
+								id="input_english"
+								class="form-control"
+								type="text"
+								autocomplete="off"
+							/>
+						</div>
+					</div>
+					<div class="row justify-content-around">
+						<div class="form-check form-check-inline">
+							<input
+								class="form-check-input"
+								type="radio"
+								id="convertToMorse"
+								value="convertToMorse"
+								name="radioConvert"
+							/>
+							<label class="form-check-label" for="convertToMorse"
+								>English > Morse</label
+							>
+						</div>
+						<div class="form-check form-check-inline">
+							<input
+								class="form-check-input"
+								type="radio"
+								id="convertToEnglish"
+								value="convertToEnglish"
+								name="radioConvert"
+							/>
+							<label class="form-check-label" for="convertToEnglish"
+								>Morse > English</label
+							>
+						</div>
+					</div>
+
+					<div class="row">
+						<button
+							id="button_translate"
+							type="submit"
+							class="btn btn-success form-control"
+						>
+							Translate
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="input-group input-group-lg">
+			<input
+				type="text"
+				class="form-control"
+				aria-label="Large"
+				aria-describedby="inputGroup-sizing-sm"
+				id="block__result"
+				disabled
+			/>
+		</div>
+
+		<script type="module" src="js/index.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
