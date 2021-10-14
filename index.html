@@ -15,45 +15,52 @@
 	</head>
 	<body>
 		<div class="jumbotron">
-			<h1 class="jumbo__header">Morse Code translator</h1>
+			<h1 class="jumbotron__title">Morse Code translator</h1>
 
 			<form id="form_morse">
 				<div class="form-group">
 					<div class="row">
-						<label class="col-sm-3 col-form-label" for="input_english"
+						<label
+							class="col-sm-3 col-form-label form__input-text"
+							for="input_english"
 							>Enter Text Here:
 						</label>
 						<div class="col-sm-9">
 							<input
 								id="input_english"
-								class="form-control"
+								class="form-control form__input"
 								type="text"
 								autocomplete="off"
 							/>
 						</div>
 					</div>
-					<div class="row justify-content-around">
+					<div class="row justify-content-around form__radio">
 						<div class="form-check form-check-inline">
 							<input
-								class="form-check-input"
+								class="form-check-input form__radio-btn"
 								type="radio"
 								id="convertToMorse"
 								value="convertToMorse"
 								name="radioConvert"
+								checked
 							/>
-							<label class="form-check-label" for="convertToMorse"
+							<label
+								class="form-check-label form__radio-label"
+								for="convertToMorse"
 								>English > Morse</label
 							>
 						</div>
 						<div class="form-check form-check-inline">
 							<input
-								class="form-check-input"
+								class="form-check-input form__radio-btn"
 								type="radio"
 								id="convertToEnglish"
 								value="convertToEnglish"
 								name="radioConvert"
 							/>
-							<label class="form-check-label" for="convertToEnglish"
+							<label
+								class="form-check-label form__radio-label"
+								for="convertToEnglish"
 								>Morse > English</label
 							>
 						</div>
@@ -63,7 +70,7 @@
 						<button
 							id="button_translate"
 							type="submit"
-							class="btn btn-success form-control"
+							class="btn btn-success form-control form__button"
 						>
 							Translate
 						</button>
@@ -71,7 +78,7 @@
 				</div>
 			</form>
 		</div>
-		<div class="input-group input-group-lg">
+		<div class="input-group input-group-lg container__result">
 			<input
 				type="text"
 				class="form-control"
