@@ -1,3 +1,12 @@
+const alertItem = document.querySelector(".alert");
+const result = document.getElementById("block__result");
+
 export const displayAlert = () => {
-    alert("Your string contains an invalid character");
+
+    // alertItem.style.visibility = "visible";
+    alert("Invalid input");
+}
+
+export const displayResult = (str) => {
+    result.value = str;
 }
